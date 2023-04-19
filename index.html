@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="css/spectre.min.css">
+    <link rel="stylesheet" href="css/spectre-exp.min.css">
+    <link rel="stylesheet" href="css/spectre-icons.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>passwordgenerator</title>
+</head>
+<body>
+    <main>
+        <section class="input">
+            <form class="col-xs-12 col-lg-10 col-5">
+                <label for="uppercase" class="form-switch">
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                    <i class="form-icon"></i> Großbuchstaben
+                </label>
+                <label for="lowercase" class="form-switch">
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                    <i class="form-icon"></i> Kleinbuchstaben
+                </label>
+                <label for="numbers" class="form-switch">
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <i class="form-icon"></i> Zahlen
+                </label>
+                <label for="special" class="form-switch">
+                    <input type="checkbox" name="special" id="special">
+                    <i class="form-icon"></i> Sonderzeichen
+                </label>
+
+                <label for="slider">Zeichen:
+                    <input type="range" name="slider" id="slider" class="mySlider" min="4" max="128" value="64">
+                </label>
+                <option id="sliderout"></option>
+
+                <label for="output">Ergebnis: 
+                    <input type="text" name="output" id="output" disabled>
+                </label>
+
+                <div class="buttons">
+                    <input class="btn btn-primary" type="button" id="submit" value="Passwort erstellen">
+                    <input class="btn" type="button" id="copy" value="Passwort kopieren">
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+    <script src="js/main.js"></script>
+</html>
